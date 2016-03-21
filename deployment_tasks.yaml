@@ -1,0 +1,19 @@
+- id: cinder-datera-driver
+  type: puppet
+  role: [cinder]
+  required_for: [post_deployment_end]
+  requires: [post_deployment_start]
+  parameters:
+    puppet_manifest: puppet/manifests/cinder_datera_driver.pp
+    puppet_modules:  "puppet/modules/:/etc/puppet/modules/"
+    timeout: 360
+
+- id: cinder-datera-config
+  type: puppet
+  role: [cinder]
+  required_for: [post_deployment_end]
+  requires: [post_deployment_start, cinder-datera-driver]
+  parameters:
+    puppet_manifest: puppet/manifests/cinder_datera_config.pp
+    puppet_modules:  "puppet/modules/:/etc/puppet/modules/"
+    timeout: 360

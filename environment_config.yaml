@@ -1,0 +1,34 @@
+attributes:
+  multibackend:
+    value: false
+    label: 'Multibackend enabled'
+    description: 'Datera driver will be used with Cinder Multibackend feature'
+    weight: 15
+    type: "checkbox"
+  datera_mvip:
+    value: ''
+    label: 'Cluster Management VIP (san_ip)'
+    description: 'The hostname (or IP address) for the Datera management API endpoint.'
+    weight: 20
+    type: "text"
+  datera_admin_login:
+    value: ''
+    label: 'Login for Admin account (san_login)'
+    description: 'account used by Cinder service.'
+    weight: 30
+    type: "text"
+    regex:
+      source: '\S'
+      error: "Username field cannot be empty"
+  datera_admin_password:
+    value: ''
+    label: 'Password for Admin account (san_password)'
+    description: 'account used by Cinder service.'
+    weight: 40
+    type: "password"
+  datera_num_replicas:
+    value: '2'
+    label: 'Data replication factor'
+    description: 'Repliacte data X times over the cluster'
+    weight: 50
+    type: "text"
