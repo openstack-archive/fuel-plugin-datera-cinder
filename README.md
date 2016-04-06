@@ -15,7 +15,7 @@ Requirements
 
 | Requirement                                          | Version/Comment |
 |------------------------------------------------------|-----------------|
-| Mirantis OpenStack compatibility                     | >= 7.1          |
+| Mirantis OpenStack compatibility                     | >= 7.0          |
 | Access to Datera via ccinder-volume node             |                 |
 | iSCSI initiator on all compute/cinder-volume nodes   |                 |
 
