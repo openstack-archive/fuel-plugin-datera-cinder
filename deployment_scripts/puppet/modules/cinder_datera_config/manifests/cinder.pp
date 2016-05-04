@@ -1,18 +1,6 @@
-#    Copyright 2016 Datera, Inc.
 #
-#    Licensed under the Apache License, Version 2.0 (the "License"); you may
-#    not use this file except in compliance with the License. You may obtain
-#    a copy of the License at
+# Configure the Datera driver in cinder
 #
-#         http://www.apache.org/licenses/LICENSE-2.0
-#
-#    Unless required by applicable law or agreed to in writing, software
-#    distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-#    WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
-#    License for the specific language governing permissions and limitations
-#    under the License.
-#
-
 class cinder_datera_config::cinder (
     $backend_name  = 'datera',
     $backends      = ''
@@ -32,18 +20,18 @@ class cinder_datera_config::cinder (
     if $plugin_settings['multibackend'] {
       $section = $backend_name
       cinder_config {
-        "DEFAULT/enabled_backends": value => "${backend_name},${backends}";
+        'DEFAULT/enabled_backends': value => "${backend_name},${backends}";
       }
     } else {
       $section = 'DEFAULT'
     }
 
     cinder_datera_config::backend::datera{ $section :
-      san_ip               => $plugin_settings['datera_mvip'],
-      san_login            => $plugin_settings['datera_admin_login'],
-      san_password         => $plugin_settings['datera_admin_password'],
-      datera_num_replicas  => $plugin_settings['datera_num_replicas'],
-      extra_options        => {}
+      san_ip              => $plugin_settings['datera_mvip'],
+      san_login           => $plugin_settings['datera_admin_login'],
+      san_password        => $plugin_settings['datera_admin_password'],
+      datera_num_replicas => $plugin_settings['datera_num_replicas'],
+      extra_options       => {}
     }
 
     Cinder_config<||>~> Service[cinder_volume]
