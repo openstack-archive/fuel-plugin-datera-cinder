@@ -2,8 +2,6 @@
 .build
 *.pyc
 *.bak
-repositories/centos/*
-repositories/ubuntu/*
 deployment_scripts/puppet/modules/inifile
 deployment_scripts/puppet/modules/stdlib
 build.sh
