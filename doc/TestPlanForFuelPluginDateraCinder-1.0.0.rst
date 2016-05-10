@@ -1,46 +1,8 @@
 Test Plan for Datara-cinder-1.0.0 Fuel Plugin
 =============================================
 
-`Test Plan for Datara-cinder-1.0.0 Fuel Plugin
-0 <#__RefHeading___Toc1620_1087484962>`__
-
-`Revision history 2 <#__RefHeading___Toc1622_1087484962>`__
-
-`Datera-Cinder Plugin 3 <#datera-cinder-plugin>`__
-
-`Developer’s specification 3 <#__RefHeading___Toc1626_1087484962>`__
-
-`Limitations 3 <#__RefHeading___Toc1628_1087484962>`__
-
-`Test strategy 3 <#__RefHeading___Toc1630_1087484962>`__
-
-`Acceptance criteria 3 <#__RefHeading___Toc1632_1087484962>`__
-
-`Test environment, infrastructure and tools
-3 <#__RefHeading___Toc1634_1087484962>`__
-
-`Test Environment Fuel 7.0 3 <#test-environment-fuel-7.0>`__
-
-`Test Environment Fuel 8.0 4 <#test-environment-fuel-8.0>`__
-
-`Product compatibility matrix 4 <#__RefHeading___Toc1638_1087484962>`__
-
-`System testing 4 <#__RefHeading___Toc1640_1087484962>`__
-
-`1. Install plugin and deploy environment
-4 <#install-plugin-and-deploy-environment>`__
-
-`2. Modifying env with an enabled plugin (removing/adding controller
-nodes)
-5 <#modifying-env-with-an-enabled-plugin-removingadding-controller-nodes>`__
-
-`3. Modifying env with an enabled plugin (removing/adding compute node)
-6 <#modifying-env-with-an-enabled-plugin-removingadding-compute-node>`__
-
-`4. Uninstall of the plugin with a deployed environment
-7 <#uninstall-of-the-plugin-with-a-deployed-environment>`__
-
-`5. Uninstall of the plugin 7 <#uninstall-of-the-plugin>`__
+.. contents::
+    :depth: 2
 
 Revision history
 ================
@@ -52,7 +14,7 @@ Revision history
 |               |                     |                                                                          |                                              |
 |               |                     | (`*ipovolotskaya@mirantis.com* <mailto:ipovolotskaya@mirantis.com>`__)   |                                              |
 +---------------+---------------------+--------------------------------------------------------------------------+----------------------------------------------+
-| 1.0           | 28.03.2016          | Funs Kessen <`*ttk@datera.io* <mailto:ttk@datera.io>`__>                 | Fuel Plugin Datera Cinder 1.0.0 Test plan.   |
+| 1.0           | 28.03.2016          | Funs Kessen <`*ftk@datera.io* <mailto:ttk@datera.io>`__>                 | Fuel Plugin Datera Cinder 1.0.0 Test plan.   |
 +---------------+---------------------+--------------------------------------------------------------------------+----------------------------------------------+
 
 Datera-Cinder Plugin
@@ -295,7 +257,7 @@ System testing
 |                   |                                                                                                                                                                                                                      |
 |                   | 11. Check that it was successfully removed                                                                                                                                                                           |
 +-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Expected Result   | *Plugin was installed successfully. Alert is present when attempting to delete the plugin which is attached to an enabled environment. When the environment was removed the plugin was removed successfully too. *   |
+| Expected Result   | Plugin was installed successfully. Alert is present when attempting to delete the plugin which is attached to an enabled environment. When the environment was removed the plugin was removed successfully too.      |
 +-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 **5. Uninstall of the plugin**
@@ -316,5 +278,3 @@ System testing
 +-------------------+----------------------------------------------------------------------+
 | Expected Result   | *Plugin was installed and then removed successfully.*                |
 +-------------------+----------------------------------------------------------------------+
-
-
