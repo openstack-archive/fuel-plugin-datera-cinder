@@ -14,7 +14,7 @@ Revision history
 |               |                     |                                                                          |                                              |
 |               |                     | (`*ipovolotskaya@mirantis.com* <mailto:ipovolotskaya@mirantis.com>`__)   |                                              |
 +---------------+---------------------+--------------------------------------------------------------------------+----------------------------------------------+
-| 1.0           | 28.03.2016          | Funs Kessen <`*ftk@datera.io* <mailto:ttk@datera.io>`__>                 | Fuel Plugin Datera Cinder 1.0.0 Test plan.   |
+| 1.0           | 10.06.2016          | Funs Kessen <`*ftk@datera.io* <mailto:ttk@datera.io>`__>                 | Fuel Plugin Datera Cinder 1.0.0 Test plan.   |
 +---------------+---------------------+--------------------------------------------------------------------------+----------------------------------------------+
 
 Datera-Cinder Plugin
@@ -69,8 +69,10 @@ Test environment, infrastructure and tools
 The test environments were run on KVM where 7 VMs were used with 5
 network interfaces per VM attached to 5 separate virtual networks.
 
-The Storage network is placed on one of the NICs in a separate VLAN, 102
-with it's own subnet, 192.168.42.0/24.
+The storage network lives outside of the Fuel controlled networks and is 
+routed to. Fuel destroys the networks each redeploy which compromises 
+connectivity for VMs living outside of Fuel's control that are plugged on
+Fuel networks.
 
 Test Environment Fuel 7.0
 ~~~~~~~~~~~~~~~~~~~~~~~~~

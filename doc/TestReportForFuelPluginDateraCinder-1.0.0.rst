@@ -14,7 +14,7 @@ Revision history
 |               |                     |                                                                          |                                              |
 |               |                     | (`*ipovolotskaya@mirantis.com* <mailto:ipovolotskaya@mirantis.com>`__)   |                                              |
 +---------------+---------------------+--------------------------------------------------------------------------+----------------------------------------------+
-| 1.0           | 06.06.2016          | Funs Kessen <`*ftk@datera.io* <mailto:ttk@datera.io>`__>                 | Fuel Plugin Datera Cinder 1.0.0 Test Report. |
+| 1.0           | 10.06.2016          | Funs Kessen <`*ftk@datera.io* <mailto:ttk@datera.io>`__>                 | Fuel Plugin Datera Cinder 1.0.0 Test Report. |
 +---------------+---------------------+--------------------------------------------------------------------------+----------------------------------------------+
 
 Document purpose
