@@ -78,15 +78,13 @@ Test Environment Fuel 7.0
 +----------+-------------------------+------------+-----------+------------------+-----------------+
 | **VM**   | **Description**         | **vCPU**   | **RAM**   | **HD**           | **OS**          |
 +----------+-------------------------+------------+-----------+------------------+-----------------+
-| 1        | Fuel 7.0 Master         | 2          | 4 GB      | 100 GB           | CentOS 6.5      |
+| 1        | Fuel 7.0 Master         | 2          | 4 GB      | 75 GB            | CentOS 6.5      |
 +----------+-------------------------+------------+-----------+------------------+-----------------+
-| 3        | Openstack Controllers   | 2          | 4 GB      | 80 GB            | Ubuntu          |
+| 3        | Openstack Controllers   | 2          | 4 GB      | 3x50 GB          | Ubuntu          |
 +----------+-------------------------+------------+-----------+------------------+-----------------+
-| 1-2      | Openstack Compute       | 2          | 4 GB      | 80 GB            | Ubuntu          |
+| 2        | Openstack Compute       | 2          | 4 GB      | 3x50 GB          | Ubuntu          |
 +----------+-------------------------+------------+-----------+------------------+-----------------+
-| 1        | Openstack Ceilometer    | 2          | 4 GB      | 80 GB            | Ubuntu          |
-+----------+-------------------------+------------+-----------+------------------+-----------------+
-| 1        | Datera EDF Sim.         | 2          | 3 GB      | 64 GB + 100 GB   | DaterOS 1.0.1   |
+| 1        | Datera EDF Sim.         | 2          | 4 GB      | 64 GB + 100 GB   | DaterOS 1.0.1   |
 +----------+-------------------------+------------+-----------+------------------+-----------------+
 
 Test Environment Fuel 8.0
@@ -95,15 +93,13 @@ Test Environment Fuel 8.0
 +----------+------------------------+------------+-----------+------------------+-----------------+
 | **VM**   | **Description**        | **vCPU**   | **RAM**   | **HD**           | **OS**          |
 +----------+------------------------+------------+-----------+------------------+-----------------+
-| 1        | Fuel 8.0 Master        | 2          | 4 GB      | 100 GB           | CentOS 7.1      |
+| 1        | Fuel 8.0 Master        | 2          | 4 GB      | 75 GB            | CentOS 7.1      |
 +----------+------------------------+------------+-----------+------------------+-----------------+
-| 3        | Openstack Controller   | 2          | 4 GB      | 80 GB            | Ubuntu          |
+| 3        | Openstack Controller   | 2          | 4 GB      | 3x50 GB          | Ubuntu          |
 +----------+------------------------+------------+-----------+------------------+-----------------+
-| 1-2      | Openstack Compute      | 2          | 4 GB      | 80 GB            | Ubuntu          |
+| 2        | Openstack Compute      | 2          | 4 GB      | 3x50 GB          | Ubuntu          |
 +----------+------------------------+------------+-----------+------------------+-----------------+
-| 1        | Openstack Ceilometer   | 2          | 4 GB      | 80 GB            | Ubuntu          |
-+----------+------------------------+------------+-----------+------------------+-----------------+
-| 1        | Datera EDF Sim.        | 2          | 3 GB      | 64 GB + 100 GB   | DaterOS 1.0.1   |
+| 1        | Datera EDF Sim.        | 2          | 4 GB      | 64 GB + 100 GB   | DaterOS 1.0.1   |
 +----------+------------------------+------------+-----------+------------------+-----------------+
 
 Product compatibility matrix
@@ -132,7 +128,7 @@ System testing
 |                   |                                                                                                                                                               |
 |                   | 3. Create an environment with the plugin enabled.                                                                                                             |
 |                   |                                                                                                                                                               |
-|                   | 4. Add 3 nodes with the Controller and Cinder role, 2 node with Compute role and 1 node with another role.                                                    |
+|                   | 4. Add 3 nodes with the Controller and Cinder role, 2 node with Compute.                                                                                      |
 |                   |                                                                                                                                                               |
 |                   | 5. Deploy the cluster.                                                                                                                                        |
 |                   |                                                                                                                                                               |
@@ -157,7 +153,7 @@ System testing
 |                   |                                                                                                                                                                                                                              |
 |                   | 4.  Create an environment with the plugin enabled.                                                                                                                                                                           |
 |                   |                                                                                                                                                                                                                              |
-|                   | 5.  Add 3 nodes with the Controller and Cinder role, 2 node with Compute role and 1 node with another role.                                                                                                                  |
+|                   | 5.  Add 3 nodes with the Controller and Cinder role, 2 node with Compute.                                                                                                                                                    |
 |                   |                                                                                                                                                                                                                              |
 |                   | 6.  Deploy the cluster.                                                                                                                                                                                                      |
 |                   |                                                                                                                                                                                                                              |
