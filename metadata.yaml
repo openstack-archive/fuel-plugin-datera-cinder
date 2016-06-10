@@ -1,11 +1,11 @@
 name: fuel-plugin-datera-cinder
 title: Fuel Datera driver for Cinder
-version: '0.1.51'
+version: '1.0.0'
 description: Installs and enables the Datera driver in Cinder
 fuel_version: ['7.0', '8.0']
 licenses: ['Apache License Version 2.0']
 authors: [ 'Funs Kessen <funs@barred.org>' ]
-homepage: 'https://github.com/stackforge/fuel-plugin-datera-cinder'
+homepage: 'https://github.com/openstack/fuel-plugin-datera-cinder'
 groups: ['storage::cinder']
 
 releases:

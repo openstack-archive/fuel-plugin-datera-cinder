@@ -31,6 +31,6 @@ attributes:
   datera_num_replicas:
     value: '2'
     label: 'Data replication factor'
-    description: 'Repliacte data X times over the cluster'
+    description: 'Replicate data X times over the cluster'
     weight: 50
     type: "text"
