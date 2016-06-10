@@ -84,15 +84,13 @@ Datera Cinder plugin installation
    please follow the instructions of the Mirantis Fuel documentation:
 
    ::
-
-      scp fuel-plugin-datera-cinder-1.0-1.0.0.noarch.rpm \
+      scp fuel-plugin-datera-cinder-1.0-1.0.0-1.noarch.rpm \
           root@:<the_Fuel_Master_node>:
 
 #. Log into the Fuel Master node and install the plugin:
 
    ::
-
-        fuel plugins --install fuel-plugin-datera-cinder-1.0-1.0.0.noarch.rpm
+        fuel plugins --install fuel-plugin-datera-cinder-1.0-1.0.0-1.noarch.rpm
 
 Datera Cinder plugin configuration
 -----------------------------------
@@ -111,14 +109,8 @@ The configuration for both Fuel 7.0 and 8.0, differences will be marked.
 #. In Fuel 7.0: Open the *Settings tab* of the Fuel web UI, scroll down, 
    select 'Fuel plugin to enable Datera driver in Cinder.' on the left.
 
-      .. image:: figures/cinder-datera-plugin-1.0.0-7.0.png
-         :width: 100%
-
 #. In Fuel 8.0: Open the *Settings tab* of the Fuel web UI, scroll down
    select 'storage' on the left and select the Datera Fuel plugin.
-
-      .. image:: figures/cinder-datera-plugin-1.0.0-8.0.png
-         :width: 100%
 
 #. 'Multibackend enabled':
     By default the Datera plugin will not use Multibackend as a configuration option. This means that the configuration options will be set in the 'default' context of the cinder.conf file. In Fuel 8.0 the 'Multibackend enabled' checkbox can be set to support  multiple backends in cinder, which will put the configuration options in it's own Datera context.
