@@ -124,8 +124,7 @@ The configuration for both Fuel 7.0 and 8.0, differences will be marked.
 #. 'Data replication factor': 
     This setting dictates how many copies of an app-instance will be distributed over the Datera EDF using its smart placement policies.
 
-#. When configuration is complete the network check can be run and the 
-    environment can be deployed.
+#. When configuration is complete the network check can be run and the environment can be deployed.
 
 User Guide
 ==========
