@@ -1,4 +1,4 @@
-de to the Datera Cinder Plugin version 1.0.0 for Fuel
+Guide to the Datera Cinder Plugin version 1.0.0 for Fuel
 ********************************************************
 
 This document provides instructions for installing, configuring and using
@@ -81,16 +81,13 @@ Datera Cinder plugin installation
    `Fuel Plugins Catalog <https://www.mirantis.com/products/openstack-drivers-and-plugins/fuel-plugins/>`_.
 
 #. Copy the plugin to Fuel Master node. If no Fuel master node is present
-   please follow the instructions of the Mirantis Fuel documentation:
+   please follow the instructions of the Mirantis Fuel documentation::
 
-   ::
-      scp fuel-plugin-datera-cinder-1.0-1.0.0-1.noarch.rpm \
-          root@:<the_Fuel_Master_node>:
+    scp fuel-plugin-datera-cinder-1.0-1.0.0-1.noarch.rpm root@:<the_Fuel_Master_node>:
 
-#. Log into the Fuel Master node and install the plugin:
+#. Log into the Fuel Master node and install the plugin::
 
-   ::
-        fuel plugins --install fuel-plugin-datera-cinder-1.0-1.0.0-1.noarch.rpm
+    fuel plugins --install fuel-plugin-datera-cinder-1.0-1.0.0-1.noarch.rpm
 
 Datera Cinder plugin configuration
 -----------------------------------
@@ -148,3 +145,5 @@ Fuel 7.0.
 
 Appendix
 ========
+* `Datera EDF <http://www.datera.io/>`_
+* `Mirantis Fuel Plugins <https://www.mirantis.com/validated-solution-integrations/fuel-plugins/>`_
