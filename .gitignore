@@ -1,9 +1,0 @@
-.tox
-.build
-*.pyc
-*.bak
-deployment_scripts/puppet/modules/inifile
-deployment_scripts/puppet/modules/stdlib
-build.sh
-*.rpm
-.project
